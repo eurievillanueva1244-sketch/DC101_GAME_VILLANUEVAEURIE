@@ -2,7 +2,7 @@
 This is repository of Fruit Memory Game created by Eurie Villanueva.
 
 **GAME TITLE and DESCRIPTION:**
-Game Tittle- Fruit Memory Game 
+Game Tittle- "Fruit Memory Game"
 Description- This is a Memory Game inspired by fruits from New Years eve. This game is good for any ages to enhance memory. The timer is included in the game to measure how long a player takes to finish. It helps track progress and see whether the player’s memory improves each time they play.
 
 **Technology used**
