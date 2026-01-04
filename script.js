@@ -2,6 +2,7 @@ const gameContainer = document.getElementById("game-container");
 const timerDisplay = document.getElementById("timer");
 const startBtn = document.getElementById("start-btn");
 const message = document.getElementById("message");
+const bgMusic = document.getElementById("bg-music");
 
 let timer = 0;
 let interval;
@@ -11,6 +12,17 @@ let lockBoard = false;
 let matchedCount = 0;
 
 function startGame() {
+	
+  bgMusic.volume = 0.4;
+  bgMusic.currentTime = 0; // restart music
+  bgMusic.play();
+
+  gameContainer.innerHTML = "";
+  message.innerText = "";
+  timer = 0;
+  matchedCount = 0;
+  timerDisplay.textContent = "Time: 0s";
+  clearInterval(interval);
   gameContainer.innerHTML = "";
   message.innerText = "";
   timer = 0;
@@ -41,6 +53,7 @@ function startGame() {
     card.addEventListener("click", () => flipCard(card));
     gameContainer.appendChild(card);
   });
+
 }
 
 function flipCard(card) {
